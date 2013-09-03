@@ -1,0 +1,6 @@
+<h1>Shared Todo List</h1>
+<ul> <% @todo_item.each do |i| %>
+	<li> <%= i.todo_item %> </li>
+	<%end%>
+</ul>
+<a href="/todos/delete">Delete Last todo item</a>
