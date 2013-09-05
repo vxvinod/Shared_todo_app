@@ -1,7 +1,8 @@
 SharedTodoApp::Application.routes.draw do
   get "todos/index"
+  match "todos/delete" => "todos#delete",:as => :delete
+  match "todos/add" => "todos#add", :as=> :add
 
-  get "todos/delete"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
